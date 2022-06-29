@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Rubik:wght@300;400;500;600;700;800&display=swap');
+
+* { 
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+/* 
+*  CABEÇALHO
+*/
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 8px 0;
+    width: 100%;
+    position: fixed;
+    background: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    top: 0;
+    left: 0;
+}
+
+header img {
+    width: 125px;
+    height: 50px;
+}
+
+nav a {
+    color: #000;
+    text-decoration: none;
+    margin: 4px;
+    padding: 8px;
+}
+
+/* 
+*   BANNER
+*/
+
+.banner {
+    width: 100%;
+}
+
+.banner img{
+    width: 100%;
+    height: 400px;
+    margin-top: 66px;
+}
+
+/* 
+*   CONTEÚDO PRINCIPAL
+*/
+
+section {
+    height: 100vh;
+}
+
+h2 {
+    font-size: 46px;
+    text-align: center;
+    margin: 20px 10px;
+}
+
+/* 
+*   SEÇÃO DE DEPOIMENTO
+*/
+
+.depoimento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conteudo-depoimento {
+    display: flex;
+    text-align: justify;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    width: 80%;
+}
+
+.imagem-depoimento img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: fill;
+}
+
+.conteudo-depoimento-texto img {
+    height: 15px;
+    width: 15px;
+}
+
+/* 
+*   SEÇÃO DA LOJA
+*/
+
+.conteudo-shop {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+.card {
+    width: 30%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 8px;
+    padding: 4px;
+    height: 400px;
+}
+
+.image-card {
+    width: 100%;
+}
+
+.image-card img {
+    width: 100%;
+    height: 250px;
+}
+
+.descricao-card {
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.descricao-card h4 {
+    font-size: 20px;
+}
+
+.descricao-card h5 {
+    font-size: 18px;
+}
+
+/*
+*   SEÇÃO DO CONTATO
+*/
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url('../images/contact-bg.png') no-repeat;
+    background-size: 100% 100%;
+    object-fit: fill;
+    height: 110vh;
+}
+
+.contato h2 {
+    color: #fff;
+}
+
+.conteudo-contato {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+}
+
+.contato-info ul {
+    list-style: none;
+}
+
+.contato-info ul li strong {
+    margin-right: 20px;
+}
+
+.contato-info ul li p{
+    font-size: 18px;
+    margin-left: 10px;
+    color: #fff;
+    line-height: 35px;
+}
+
+/* 
+*   RODAPÉ
+*/
+
+.rodape {
+    border-top: 1px solid #ccc;
+    padding: 12px;
+}
+
+.rodape p {
+    font-size: 14px;
+    text-align: center;
+}
+
+/* 
+*   RESPONSIVO
+*/
+
+@media screen and (max-width: 720px){
+    section {
+        height: auto;
+    }
+    
+    .conteudo-shop {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .conteudo-contato {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .conteudo-contato img {
+        width: 125px;
+        height: 50px;
+    }
+
+    .contato-info ul li p {
+        font-size: 16px;
+    }
+}
